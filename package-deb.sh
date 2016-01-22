@@ -4,9 +4,7 @@ set -ex
 gem install fpm
 export DIR=${PWD#}
 export PACKAGE="openrov-ffmpeg-lib"
-cd ffmpeg
-export PACKAGE_VERSION=2.9.0-1~${BUILD_NUMBER}.`git rev-parse --short HEAD`
-cd ..
+
 
 ARCH=`uname -m`
 if [ ${ARCH} = "armv7l" ]
@@ -15,6 +13,10 @@ then
 fi
 
 ./build.sh
+
+pushd ffmpeg
+export PACKAGE_VERSION=2.9.0-1~${BUILD_NUMBER}.`git rev-parse --short HEAD`
+popd
 
 #package
 cd $DIR
