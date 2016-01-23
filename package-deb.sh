@@ -32,4 +32,4 @@ fpm -f -m info@openrov.com -s dir -t deb -a $ARCH \
 	-n ${PACKAGE} \
 	-v ${PACKAGE_VERSION} \
 	--description "OpenROV ffmpeg" \
-	-C ${DIR}/tmp/mjpg-streamer_install ./usr/bin ./usr/share
+	-C ${DIR}/output ./usr/bin ./usr/share
