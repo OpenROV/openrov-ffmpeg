@@ -10,9 +10,6 @@ cd ffmpeg
 git checkout ce855bf43bcb3e217266653281db63c94e34c700
 
 # Get library dependency sources
-
-
-
 git clone git://git.videolan.org/x264
 cd x264
 git checkout a01e33913655f983df7a4d64b0a4178abb1eb618
