@@ -4,8 +4,6 @@ set -e
 # Get the FFMPEG source
 git clone git://source.ffmpeg.org/ffmpeg.git
 
-mkdir output/usr
-
 cd ffmpeg
 git checkout ce855bf43bcb3e217266653281db63c94e34c700
 
