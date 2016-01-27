@@ -13,7 +13,7 @@ cd x264
 git checkout a01e33913655f983df7a4d64b0a4178abb1eb618
 
 # Build x264
-./configure --enable-static --disable-asm --prefix=${PWD}/../../output/usr
+./configure --enable-static --enable-pic --disable-asm --prefix=${PWD}/../../output/usr
 make -j8
 make install
 cd ..
