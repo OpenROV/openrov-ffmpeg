@@ -14,9 +14,11 @@ fi
 
 ./build.sh
 
-pushd ffmpeg
-export PACKAGE_VERSION=2.9.0-1~${BUILD_NUMBER}.`git rev-parse --short HEAD`
-popd
+#pushd ffmpeg
+#export PACKAGE_VERSION=2.9.0-1~${BUILD_NUMBER}.`git rev-parse --short HEAD`
+#popd
+
+export PACKAGE_VERSION=3.0.2~${BUILD_NUMBER}
 
 #package
 cd $DIR
